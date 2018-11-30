@@ -45,7 +45,7 @@ for i in range(len(Headlines)):
     print("Body")
     print(Bodies[i],'\n')
 
-    csv_writer.writerow([Headlines[i],Bodies[i]])
+    csv_writer.writerow([Headlines[i].encode("utf-8"),Bodies[i].encode("utf-8")])
 
 csv_file.close()
 
